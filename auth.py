@@ -8,6 +8,7 @@ import hashlib
 import random
 import base64
 import json
+import requests
 
 from config import JWT_SECRET, ADMIN_DEFAULT_PASSWORD
 
