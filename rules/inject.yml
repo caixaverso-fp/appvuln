@@ -1,0 +1,9 @@
+rules:
+  - id: python-sql-string-concat
+    languages:
+      - python
+    message: "Possível SQL construído por concatenação de strings."
+    severity: WARNING
+    - patterns:
+        - pattern: $QUERY + $INPUT
+        - pattern: $CURSOR.execute($QUERY)
